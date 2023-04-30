@@ -1,0 +1,215 @@
+@import url('https://fonts.googleleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding:20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#34353a;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+header ul li.active a{
+    color: #30fe6c;
+}
+header ul li:hover a{
+    color: #30fe6c;
+}
+
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #EAEFF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+#home::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 25vw;
+    background: #30fe6c;
+    border-top-right-radius: 25vw;
+    border-top-left-radius: 25vw;
+}
+#home .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+#home .content h2 {
+    position: relative;
+    font-size: 5em;
+    font-weight: 500;
+    color:#30fe6c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    cursor: default;
+}
+#home .content p{
+    position: relative;
+    color:#34353a;
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #30fe6c;
+    text-align: center;
+    color:#222;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.btn:hover{
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    max-width: 200px;
+    background: #808080;
+    transition: 0.5s ease;
+    text-align: center;
+    color:#222;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#home .men{
+    filter: contrast(1);
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 90vh;
+}
+#services,#portfolio,#cv{
+    position: relative;
+    background: #EAEFF2;
+    min-height: 100vh;
+    padding: 120px 100px;
+}
+#services .content{
+    display: flex;
+    position: relative;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    z-index: 10000;
+
+}
+#services p{
+    position: relative;
+    color:#34353a;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+#services h2{
+    position: relative;
+    text-align: center;
+    font-size: 5em;
+    color:#30fe6c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    cursor: default;
+}
+header .logo img{
+    position: relative;
+    width: 4vw;
+    height: 4vw;
+    background: #B12B24;
+    border-radius: 50%;
+    opacity:0.8;
+
+}
+header .logo img:hover{
+   background: #fff;   
+   transition: 0.8s;
+   opacity:1;
+}
+
+#linkdinBx img:hover{
+    background: #30fe6c;
+    transition:0.5s ease;
+    border-radius: 25%;
+
+} 
+#githubBx img:hover {
+    background: #30fe6c;
+    transition: ease 0.5s;
+    border-radius: 50%;
+}
+#githubBx {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#githubBx img:hover {
+    background: #30fe6c;
+    transition: ease 0.5s;
+    border-radius: 50%;
+}
+
+#githubBx h3 {
+    color: #222;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+    font-size: 20px;
+}
+#linkdinBx h3 {
+    color: #222;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+    font-size: 20px;
+}
